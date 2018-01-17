@@ -96,5 +96,5 @@ do
         put \
          --segment-size=s${DEPLOY_SEG_BYTES} \
          --input=$file \
-        ${DEPLOY_CONTAINER}/$target
+        ${DEPLOY_CONTAINER}/$target${file##/*/}
 done
