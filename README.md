@@ -48,3 +48,9 @@ script:
 ```
 
 Note that any of the above environment variables can be set in Travis, and do not need to be included in your .travis.yml. `DEPLOY_USERNAME`, `DEPLOY_API_KEY`, `DEPLOY_CONTAINER`, and `DEPLOY_REGION` should always be set to your Rackspace credentials as environment variables in Travis, not this file.
+
+`DEPLOY_REGION` will accept multiple regions delimited by a comma.
+The following are all valid values: (Whitespace is tolerated)
+- "IAD"
+- "ORD,LON"
+- "SYD, DFW"
